@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- flowBite -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.css" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <main>
+    <div>
+      <section id="section" class="bg-slate-400 mb-[115%] sm:mb-64">
+        <h1 class="text-center pt-10 text-black font-sans font-semibold text-3xl">Welcome to TheMealDB</h1>
+        <h2 class="text-center text-black font-serif pt-2 font-medium text-xl">Search for a Meal</h2>
+        <div class="w-11/12 sm:w-3/12 mx-auto py-5  ">
+          <form onsubmit="submitForm(event)">
+            <label for=" default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">
+              Search</label>
+            <div class="relative">
+              <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                <svg aria-hidden="true" class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="none"
+                  stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                </svg>
+              </div>
+              <input id="input-text" type="search" id="default-search"
+                class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500"
+                placeholder="Search foods" required>
+              <button id="search-btn" type="submit"
+                class="text-white absolute right-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 ">Search</button>
+            </div>
+          </form>
+        </div>
+
+      </section>
+      <section class="bg-neutral-400 ">
+        <div id="card-div" class=" sm:w-11/12 mx-auto sm:grid grid-cols-3 ">
+
+        </div>
+
+
+      </section>
+    </div>
+    <div>
+      <footer class=" rounded-lg shadow bg-slate-300 m-4  ">
+        <div class="w-full container mx-auto p-4 md:px-6 md:py-8 ">
+          <div class="sm:flex sm:items-center sm:justify-between">
+            <a href="#" class="flex items-center mb-4 sm:mb-0">
+              <img src="img/theMeal.png" class="h-8 rounded mr-3" alt="" />
+            </a>
+            <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-900 sm:mb-0">
+              <li>
+                <a href="#" class="mr-4 hover:underline md:mr-6 ">About</a>
+              </li>
+              <li>
+                <a href="#" class="mr-4 hover:underline md:mr-6">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="#" class="mr-4 hover:underline md:mr-6 ">Licensing</a>
+              </li>
+              <li>
+                <a href="#" class="hover:underline">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <hr class="my-6 border-gray-200 sm:mx-auto  lg:my-8" />
+          <span class="block text-sm text-gray-900 sm:text-center">© 2023 <a href="#"
+              class="hover:underline">TheMealDB™</a>.
+            All Rights Reserved.</span>
+        </div>
+      </footer>
+    </div>
+
+
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
+  <script src="food.js"></script>
+</body>
+
+</html>
